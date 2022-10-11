@@ -1,0 +1,46 @@
+:root{
+    --pin-red: #E60023;
+    --bg-grey: #d8d8d8;
+    --grey: #686868;
+    --input-hover: #c0c0c0;
+    --card_width: 250px;
+    --row_increment: 10px;
+    --card_border_radius: 16px;
+    --card_small: 26;
+    --card_mid: 33;
+    --card_big: 45;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+i{
+    font-size:2.4rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:3%;
+}
+.dropdown{
+    font-size: 1.6rem;
+}
+.dropdown-item{
+    font-size: 1.6rem;
+}
+.dropdown-btn{
+    border: none;
+    background: transparent;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

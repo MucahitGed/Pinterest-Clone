@@ -1,0 +1,90 @@
+/*dropdowns*/
+.dropdown-notify ul{
+    text-align: center;
+    width: 300px;
+}
+.dropdown-center i, .logo-user i {
+    padding: 10px;
+    color: var(--grey);
+}
+.dropdown-user .dropdown-toggle{
+    padding: 2px;
+    color: var(--grey);
+}
+.dropdown-center i:hover, .logo-user i:hover{
+    background-color: var(--bg-grey);
+    border-radius: 50%;
+}
+.dropdown-user .dropdown-toggle:hover{
+    background-color: var(--bg-grey);
+    border-radius: 20%;
+}
+.dropdown-search{
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.dropdown-grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding: 0 10px;
+    height: 100%;
+}
+.dropdown-grid li{
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    margin: 4px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.dropdown-grid li a{
+    color: #fff;
+    font-size: 2rem;
+}
+.dropdown-grid li a:hover{
+    background: transparent;
+    color: #fff;
+}
+.dropdown-search:focus{
+    outline: none;
+    display: flex;
+}
+.dropdown-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*who has dropdown*/
+.search{
+    width: 77%; /*be carefull*/
+    border-radius: 30px;
+    background-color: #E8E8E8;
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+}
+.search:focus{
+    outline:none;
+}
+.search:hover{
+    background-color: var(--input-hover);
+}
+.search-menu{
+    width: 98%;
+    border: none;
+    
+}
+.search-menu p{
+    font-size: 1.6rem;
+    padding: 0 10px;
+    margin-top: 10px;
+}
