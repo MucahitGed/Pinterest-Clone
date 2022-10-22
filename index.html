@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pinterest Clone</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/ui.css" />
@@ -28,138 +25,140 @@
     />
   </head>
   <body>
-    <header id="header" class="header">
-      <div class="left-side-header">
-        <div class="logo">
-          <a href="./index.html"
-            ><i class="fa-brands fa-pinterest logo-pin"></i
-          ></a>
+    <main class="main">
+      <header id="header" class="header">
+        <div class="left-side-header">
+          <div class="logo">
+            <a href="./index.html"
+              ><i class="fa-brands fa-pinterest logo-pin"></i
+            ></a>
+          </div>
+          <div class="btn-main-page"><a href="./index.html">Main Page</a></div>
+          <div class="dropdown createPin">
+            <button
+              class="dropdown-btn createPin-btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Create
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Create a Idea Pin</a></li>
+              <li><a class="dropdown-item" href="#">Create a Pin</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="btn-main-page"><a href="./index.html">Main Page</a></div>
-        <div class="dropdown createPin">
+        <div class="dropdown search">
+          <input
+            type="text"
+            class="dropdown-search"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            id="search"
+            placeholder="Search"
+          />
+          <button type="submit" class="btn-submit btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <ul class="dropdown-menu search-menu">
+            <p>Populer in Pinterest</p>
+            <div class="dropdown-grid">
+              <li><a class="dropdown-item" href="#">Software</a></li>
+              <li><a class="dropdown-item" href="#">Travel</a></li>
+              <li><a class="dropdown-item" href="#">AI</a></li>
+              <li><a class="dropdown-item" href="#">Space</a></li>
+              <li><a class="dropdown-item" href="#">Night</a></li>
+              <li><a class="dropdown-item" href="#">Architecture</a></li>
+              <li><a class="dropdown-item" href="#">Tattoo</a></li>
+              <li><a class="dropdown-item" href="#">Nature</a></li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="dropdown-center dropdown-notify">
           <button
-            class="dropdown-btn createPin-btn dropdown-toggle"
+            class="dropdown-btn"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Create
+            <i class="fa-solid fa-bell"></i>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Create a Idea Pin</a></li>
-            <li><a class="dropdown-item" href="#">Create a Pin</a></li>
+            <h3>Notification</h3>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action two</a></li>
+            <li><a class="dropdown-item" href="#">Action three</a></li>
           </ul>
         </div>
-      </div>
-      <div class="dropdown search">
-        <input
-          type="text"
-          class="dropdown-search"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-          id="search"
-          placeholder="Search"
-        />
-        <button type="submit" class="btn-submit btn">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <ul class="dropdown-menu search-menu">
-          <p>Populer in Pinterest</p>
-          <div class="dropdown-grid">
-            <li><a class="dropdown-item" href="#">Software</a></li>
-            <li><a class="dropdown-item" href="#">Travel</a></li>
-            <li><a class="dropdown-item" href="#">AI</a></li>
-            <li><a class="dropdown-item" href="#">Space</a></li>
-            <li><a class="dropdown-item" href="#">Night</a></li>
-            <li><a class="dropdown-item" href="#">Architecture</a></li>
-            <li><a class="dropdown-item" href="#">Tattoo</a></li>
-            <li><a class="dropdown-item" href="#">Nature</a></li>
-          </div>
-        </ul>
-      </div>
 
-      <div class="dropdown-center dropdown-notify">
-        <button
-          class="dropdown-btn"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fa-solid fa-bell"></i>
-        </button>
-        <ul class="dropdown-menu">
-          <h3>Notification</h3>
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action two</a></li>
-          <li><a class="dropdown-item" href="#">Action three</a></li>
-        </ul>
-      </div>
-
-      <div class="dropdown-center dropdown-message">
-        <button
-          class="dropdown-btn"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fa-solid fa-comment-dots"></i>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action two</a></li>
-          <li><a class="dropdown-item" href="#">Action three</a></li>
-        </ul>
-      </div>
-      <div class="user">
-        <div class="logo-user">
-          <a href="#"><i class="fa-sharp fa-solid fa-circle-user"></i></a>
-        </div>
-        <div class="dropdown dropdown-user">
+        <div class="dropdown-center dropdown-message">
           <button
-            class="dropdown-btn dropdown-toggle"
+            class="dropdown-btn"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-          ></button>
+          >
+            <i class="fa-solid fa-comment-dots"></i>
+          </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Create a Idea Pin</a></li>
-            <li><a class="dropdown-item" href="#">Create a Pin</a></li>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action two</a></li>
+            <li><a class="dropdown-item" href="#">Action three</a></li>
           </ul>
         </div>
+        <div class="user">
+          <div class="logo-user">
+            <a href="#"><i class="fa-sharp fa-solid fa-circle-user"></i></a>
+          </div>
+          <div class="dropdown dropdown-user">
+            <button
+              class="dropdown-btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Create a Idea Pin</a></li>
+              <li><a class="dropdown-item" href="#">Create a Pin</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="content-container">
+        <div class="card card-small"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-big"></div>
+        <div class="card card-small"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-big"></div>
+        <div class="card card-small"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-big"></div>
+        <div class="card card-small"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-big"></div>
+        <div class="card card-small"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-big"></div>
+        <div class="card card-small"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-big"></div>
+        <div class="card card-small"></div>
+        <div class="card card-big"></div>
+        <div class="card card-big"></div>
+        <div class="card card-small"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-big"></div>
+        <div class="card card-big"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-big"></div>
+        <div class="card card-mid"></div>
+        <div class="card card-mid"></div>
       </div>
-    </header>
-    <div class="content-container">
-      <div class="card card-small"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-big"></div>
-      <div class="card card-small"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-big"></div>
-      <div class="card card-small"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-big"></div>
-      <div class="card card-small"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-big"></div>
-      <div class="card card-small"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-big"></div>
-      <div class="card card-small"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-big"></div>
-      <div class="card card-small"></div>
-      <div class="card card-big"></div>
-      <div class="card card-big"></div>
-      <div class="card card-small"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-big"></div>
-      <div class="card card-big"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-big"></div>
-      <div class="card card-mid"></div>
-      <div class="card card-mid"></div>
-    </div>
+    </main>
   </body>
 </html>
