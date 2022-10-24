@@ -4,6 +4,9 @@ const cards = document.querySelectorAll('.card')
 const input_populers = document.querySelectorAll('.dropdown-grid li')
 const container = document.querySelector('.content-container');
 const input = document.querySelector('.dropdown-search')
+const container_input = document.querySelector('.container-input')
+
+
 
 for(let i = 0; i < cards.length ; i++){
     cards[i].innerHTML = `

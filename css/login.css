@@ -1,0 +1,221 @@
+.header-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.header-login .left-side-header-login{
+    color: #E60023; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+} 
+.header-login .right-side-header-login{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign-up-btn , .login-btn{
+    height: 50px;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-btn{
+    padding: 10px 20px;
+    background-color: var(--pin-red);
+    border: none;
+    color: #fff;
+}
+.sign-up-btn{
+    padding: 10px 15px;
+    background-color: var(--bg-grey);
+    border: none;
+}
+.sign-up-btn:hover{
+    background-color: #a8a8a8;
+}
+.login-btn:hover{
+    background-color:rgb(190, 0, 0) ;
+}
+#id01.modal{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 600px;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50px;
+    z-index: 5;
+    background-color: #fff;
+}
+#id02.modal{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 45rem;
+    height: 60rem;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50px;
+    z-index: 5;
+    background-color: #fff;
+}
+.modal h2{
+    position: absolute;
+    left: 75px;
+    font-size: 24px;
+    top: 70px;
+    width: 350px;
+}
+.imgcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin-top: 5px;
+}
+.imgcontainer i {
+    color: #E60023;
+}
+.imgcontainer span{
+    font-size: 32px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.empty{
+    background-color: #fff;
+    width: 1px;
+    height: 1px;
+}
+.container-input{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    margin-top: 100px;
+    position: absolute;
+    left: 10rem;
+}
+.container-input label{
+    font-weight: 300;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+.container-input .email-class  , .container-input .psw-class {
+    margin-top: 10px;
+}
+.container-input input{
+    border-radius: 20px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid var(--bg-grey);
+}
+.container-input a{
+    margin-top: 30px;
+    background-color: var(--pin-red);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #fff;
+    height: 40px;
+    border-radius: 60px;
+}
+.container-input a:hover{
+    background-color:rgb(190, 0, 0) ;
+    color: #fff;
+}
+
+.forgot{
+    position: absolute;
+    left: 10rem;
+    bottom: 16rem;
+}
+.forgot a{
+    color: #000;
+    text-decoration: none;
+}
+.forgot a:hover{
+    color: #E60023;
+}
+/* login main */
+.login-main{
+    display: flex;
+
+}
+.head-login-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.head-login-main h1{
+    font-size: 6.4rem;
+    padding-top: 8rem;
+    padding-left: 8rem;
+    width: 100%;
+}
+.head-login-main p {
+    font-size: 3.2rem;
+    padding-left: 8rem;
+    padding-top: 4rem;
+}
+.head-login-main .p2 {
+    font-size: 3.2rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    padding-left: 4rem;
+}
+.head-login-main p a{
+    color: #000;
+    text-decoration: none;
+}
+.head-login-main p a:hover{
+    color:var(--pin-red)
+}
+.pinterest{
+    position: absolute;
+    color: #fff;
+    font-size: 45px;
+    top: 40%;
+    right: 22.3%;
+}
+.triangle, .triangle:before, .triangle:after { width: 40rem; height: 40rem; }
+.triangle {
+	overflow: hidden;
+	position: relative;
+	margin: 7em auto 0;
+	border-radius: 20%;
+	transform: translateY(50%) rotate(30deg) skewY(30deg) scaleX(.866);
+	cursor: pointer;
+	pointer-events: none;
+} 
+.triangle:before, .triangle:after {
+	position: absolute;
+	background: #E60023;
+	pointer-events: auto;
+	content: '';
+}
+.triangle:before {
+	border-radius: 20% 20% 20% 53%;
+	transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) 
+			skewX(30deg) scaleY(.866) translateX(-24%);
+}
+.triangle:after {
+	border-radius: 20% 20% 53% 20%;
+	transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) 
+			skewX(-30deg) scaleY(.866) translateX(24%);
+}

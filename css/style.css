@@ -13,6 +13,7 @@ header{
     justify-content: space-between;
     width: 13%;
     margin-right: 20px;
+    
 }
 .logo-pin{
     font-size: 2.4rem;
@@ -126,6 +127,7 @@ header{
 }
 .card-small{
     grid-row-end: span var(--card_small);
+    
 }
 .card-mid{
     grid-row-end: span var(--card_mid);
@@ -138,3 +140,8 @@ header{
     background-color: var(--bg-grey);
     border-radius: 50%;
 }
+
+/* login */
+
+
+/* login header */

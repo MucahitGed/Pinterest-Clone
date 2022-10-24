@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pinterest Clone</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link rel="stylesheet" href="./css/ui.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/dropdown.css" />
     <script defer src="./script/app.js"></script>
-    <script defer src="./script/search.js"></script>
+    <script defer src="./script/login.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,140 +29,132 @@
     />
   </head>
   <body>
-    <main class="main">
-      <header id="header" class="header">
-        <div class="left-side-header">
-          <div class="logo">
-            <a href="./index.html"
-              ><i class="fa-brands fa-pinterest logo-pin"></i
-            ></a>
-          </div>
-          <div class="btn-main-page"><a href="./index.html">Main Page</a></div>
-          <div class="dropdown createPin">
+    <div class="login-page">
+      <header id="header-login" class="header-login">
+        <div class="left-side-header-login">
+          <i class="fa-brands fa-pinterest fa-3x"></i>
+          <h1>Pinterest</h1>
+        </div>
+        <div class="right-side-header-login">
+          <div class="login">
             <button
-              class="dropdown-btn createPin-btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+              onclick="document.getElementById('id01').style.display='block'"
+              class="login-btn"
             >
-              Create
+              Log In
             </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Create a Idea Pin</a></li>
-              <li><a class="dropdown-item" href="#">Create a Pin</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="dropdown search">
-          <input
-            type="text"
-            class="dropdown-search"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            id="search"
-            placeholder="Search"
-          />
-          <button type="submit" class="btn-submit btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <ul class="dropdown-menu search-menu">
-            <p>Populer in Pinterest</p>
-            <div class="dropdown-grid">
-              <li><a class="dropdown-item" href="#">Software</a></li>
-              <li><a class="dropdown-item" href="#">Travel</a></li>
-              <li><a class="dropdown-item" href="#">AI</a></li>
-              <li><a class="dropdown-item" href="#">Space</a></li>
-              <li><a class="dropdown-item" href="#">Night</a></li>
-              <li><a class="dropdown-item" href="#">Architecture</a></li>
-              <li><a class="dropdown-item" href="#">Tattoo</a></li>
-              <li><a class="dropdown-item" href="#">Nature</a></li>
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+              <!-- Modal Content -->
+              <form>
+                <div class="imgcontainer">
+                  <div class="empty"></div>
+                  <i class="fa-brands fa-pinterest fa-3x"></i>
+                  <span
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="close"
+                    title="Close Modal"
+                    >&times;</span
+                  >
+                </div>
+
+                <h2>Welcome to Pinterest Clone</h2>
+                <div class="container-input log-container">
+                  <label for="uname"><b>Username</b></label>
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    name="uname"
+                    class="login-user"
+                    required
+                  />
+
+                  <label for="psw" class="psw-class"><b>Password</b></label>
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="login-psw"
+                    name="psw"
+                    required
+                  />
+                </div>
+
+                <div class="forgot">
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
             </div>
-          </ul>
-        </div>
-
-        <div class="dropdown-center dropdown-notify">
-          <button
-            class="dropdown-btn"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="fa-solid fa-bell"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <h3>Notification</h3>
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Action two</a></li>
-            <li><a class="dropdown-item" href="#">Action three</a></li>
-          </ul>
-        </div>
-
-        <div class="dropdown-center dropdown-message">
-          <button
-            class="dropdown-btn"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="fa-solid fa-comment-dots"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Action two</a></li>
-            <li><a class="dropdown-item" href="#">Action three</a></li>
-          </ul>
-        </div>
-        <div class="user">
-          <div class="logo-user">
-            <a href="#"><i class="fa-sharp fa-solid fa-circle-user"></i></a>
           </div>
-          <div class="dropdown dropdown-user">
+          <div class="sign-up">
             <button
-              class="dropdown-btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            ></button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Create a Idea Pin</a></li>
-              <li><a class="dropdown-item" href="#">Create a Pin</a></li>
-            </ul>
+              onclick="document.getElementById('id02').style.display='block'"
+              class="sign-up-btn"
+            >
+              Sign Up
+            </button>
+            <!-- The Modal -->
+            <div id="id02" class="modal">
+              <!-- Modal Content -->
+              <form>
+                <div class="imgcontainer">
+                  <div class="empty"></div>
+                  <i class="fa-brands fa-pinterest fa-3x"></i>
+                  <span
+                    onclick="document.getElementById('id02').style.display='none'"
+                    class="close"
+                    title="Close Modal"
+                    >&times;</span
+                  >
+                </div>
+                <h2>Welcome to Pinterest Clone</h2>
+                <div class="container-input sign-container">
+                  <label for="uname"><b>Username</b></label>
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    name="uname"
+                    required
+                  />
+                  <label for="email" class="email-class"><b>Email</b></label>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="mail"
+                    required
+                  />
+                  <label for="psw" class="psw-class"><b>Password</b></label>
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    name="psw"
+                    required
+                  />
+
+                  <!-- <a href="main.html" class="btn-sign-up">Sign Up</a> -->
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </header>
-      <div class="content-container">
-        <div class="card card-small"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-big"></div>
-        <div class="card card-small"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-big"></div>
-        <div class="card card-small"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-big"></div>
-        <div class="card card-small"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-big"></div>
-        <div class="card card-small"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-big"></div>
-        <div class="card card-small"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-big"></div>
-        <div class="card card-small"></div>
-        <div class="card card-big"></div>
-        <div class="card card-big"></div>
-        <div class="card card-small"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-big"></div>
-        <div class="card card-big"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-big"></div>
-        <div class="card card-mid"></div>
-        <div class="card card-mid"></div>
-      </div>
-    </main>
+      <section class="login-main">
+        <div class="head-login-main">
+          <h1>Welcome To My Pinterest Clone Hope You'll Like It</h1>
+          <p>
+            You can see my other projects
+            <a href="https://mucahitged.github.io/" target="_blank"
+              >From Here
+            </a>
+            or
+            <a href="https://github.com/MucahitGed" target="_blank"> Here</a>
+          </p>
+          <p class="p2">You can log in or sign up without fill in anything</p>
+        </div>
+        <div class="triangle"></div>
+        <div class="pinterest">
+          <i class="fa-brands fa-pinterest-p fa-3x pinterest"></i>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
